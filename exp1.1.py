@@ -22,3 +22,4 @@ print('Total marks=',a,'\naverage marks =',a/5,'\npercentage =',a/5,"%")
 
 
 #convertion
+a=0
