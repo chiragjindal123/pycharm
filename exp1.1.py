@@ -22,4 +22,10 @@ print('Total marks=',a,'\naverage marks =',a/5,'\npercentage =',a/5,"%")
 
 
 #convertion
-a=0
+
+print("enter your value in centimeter")
+a=float(input())
+
+b=a*100
+c=b*1000
+print('In meters',b,'cm','\nIn kilometers',c,'cm')
