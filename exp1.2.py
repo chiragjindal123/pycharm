@@ -43,4 +43,4 @@ elif (b>=c) and (b>=c):
     print("the greatest number is :" +str(b))
 
 else:
-    print("the greatest number is :" +str(c))
+    print("the greatest number is : " +str(c))
