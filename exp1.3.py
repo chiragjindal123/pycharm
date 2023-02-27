@@ -11,7 +11,7 @@ for i in range (1,11):
     areac(a)
 
 #write a python program to print Multiplication tables from 2 to 20 whether table values entered by user ustng Simple Function , Parameterized Function .
-#Return Type with function and return type with parameterized Functions.
+#Return Type with function and return  type with parameterized Functions.
 
 def multiplication(n):
     for i in range(1,11):
