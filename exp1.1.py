@@ -28,4 +28,4 @@ a=float(input())
 
 b=a*100
 c=b*1000
-print('In meters',b,'cm','\nIn kilometers',c,'cm')
+print('In meters',b,'cm','\nIn kilometers',c,'cm;')
