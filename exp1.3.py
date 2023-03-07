@@ -1,14 +1,14 @@
 #Write a python program to calculate area of 1O different circles. Given the pie 22/7 and radius of the circles entered by user using Simple Funcbon ,
 #Parameterized Function , Return Type with function and retum type With parameterized Functions .
 
-def areac(r):
-    pie=22/7
-    area=pie*r*r
-    print("Area: {:.2f} ".format(area))
-    return area
-for i in range (1,11):
-    a=int(input("Enter Radius:"))
-    areac(a)
+# def areac(r):
+#     pie=22/7
+#     area=pie*r*r
+#     print("Area: {:.2f} ".format(area))
+#     return area
+# for i in range (1,11):
+#     a=int(input("Enter Radius:"))
+#     areac(a)
 
 #write a python program to print Multiplication tables from 2 to 20 whether table values entered by user ustng Simple Function , Parameterized Function .
 #Return Type with function and return  type with parameterized Functions.
@@ -21,95 +21,110 @@ for i in range (1,11):
 #  multiplication(i)
 #  print("\n")
 
+# Write a python program to calculate area of 1O different circles. Given the pie 22/7 and radius of the circles entered by user using Simple Funcbon ,
+# Parameterized Function , Return Type with function and retum type With parameterized Functions .
 
 
- # ---------------------------------------------------------------------------------------------------------
+# simple function
 
- # Write a python program to calculate area of 10 different circles. Given the pi = 22/7 and the radius of circles entered by user using simple function, parameterized function, return type with function and return type with parameterized function
+def areac():
+    pie = 22 / 7
+    r = int(input("Enter Radius:"))
+    area = round(pie * r * r, 2)
+    print("Area Is:", area)
 
- # def area_1(r):
- #     pi = 22/7
- #     return pi * r * r
 
- # def area_2():
- #     pi = 22/7
- #     r = int(input('Enter the radius: '))
- #     return pi * r * r
+for i in range(1, 11):
+    areac()
 
- # def area_3(r):
- #     pi = 22/7
- #     print(round((pi * r * r), 3))
 
- # def area_4():
- #     r = int(input('Enter the radius: '))
- #     pi = 22/7
- #     print(round((pi * r * r), 3))
+# parameterized
+def areac(r=0):
+    pie = 22 / 7
+    area = pie * r * r
+    print("Area Is:", round(area, 2))
 
- # for i in range(3):
- #     print(round(area_1(r=int(input("Enter radius: "))), 3))
 
- # for i in range(2):
- #     print(round(area_2(),3))
+for i in range(1, 11):
+    r = int(input("Enter Radius:"))
+    areac(r)
 
- # for i in range(3):
- #     area_3(r=int(input("Enter radius: ")))
 
- # for i in range(2):
- #     area_4()
+# return type
 
- # def simFunc(n):
- #     for i in range(1, 11):
- #         print("{0} X {1} = {2}".format(n, i, n*i))
+def areac():
+    pie = 22 / 7
+    r = int(input("Enter Radius:"))
+    area = round(pie * r * r, 2)
+    return area
 
- # def paramFunc(n, limit):
- #     for i in range(1, limit+1):
- #         print("{0} X {1} = {2}".format(n, i, n*i))
 
- # def simFuncWR(n):
- #     table = []
- #     for i in range(1, 11):
- #         table.append(n*i)
- #     return table
+for i in range(1, 11):
+    ar = areac()
+    print("Area Is:", ar)
 
- # def paramFuncWR(n, limit):
- #     table = []
- #     for i in range(1, limit+1):
- #         table.append(n*i)
- #     return table
 
- # print('''
- # How do you want to print multiplication table?
- # Enter 1 for using simple function
- # Enter 2 for using parameterized function
- # Enter 3 for using return type simple function
- # Enter 4 for using return type parameterized function
- # ''')
+# parameterized and return
+def areac(r):
+    pie = 22 / 7
+    area = round(pie * r * r, 2)
+    return area
 
- # choice = int(input("Enter your choice: "))
 
- # if choice == 1:
- #     for i in range(2, 21):
- #         simFunc(i)
- #         print()
+for i in range(1, 11):
+    r = int(input("Enter Radius:"))
+    a = areac(r)
+    print("Area: ", a)
 
- # elif choice == 2:
- #     limit = int(input("Enter the limit of the table: "))
- #     for i in range(2, 21):
- #         paramFunc(i, limit)
- #         print()
 
- # elif choice == 3:
- #     for i in range(2, 21):
- #         table = simFuncWR(i)
- #         print("{0} Table: {1}".format(i, table))
- #         print()
+# write a python program to print Multiplication tables from 2 to 20 whether table values entered by user ustng Simple Function , Parameterized Function .
+# Return Type with function and return type with parameterized Functions.
 
- # elif choice == 4:
- #     limit = int(input("Enter the limit of the table: "))
- #     for i in range(2, 21):
- #         table = paramFuncWR(i, limit)
- #         print("{0} Table: {1}".format(i, table))
- #         print()
+# simple function
+def mul():
+    for i in range(2, 21):
+        for j in range(1, 11):
+            print(i, "*", j, "=", i * j)
+        print("\n")
 
- # else:
- #     print("Invalid choice.")
+
+mul()
+
+
+# return type
+
+def multi():
+    table = ""
+    for i in range(2, 21):
+        for j in range(1, 11):
+            table += f"{i} x {j} = {i * j}\n"
+        table += "\n"
+    return table
+
+
+table = multi()
+print(table)
+
+
+# parameterized
+def multiplication(n):
+    for i in range(1, 11):
+        print(n, "*", i, "=", n * i)
+
+
+for i in range(2, 21):
+    multiplication(i)
+    print("\n")
+
+    # parameterized return type
+
+
+def mult(i, j):
+    return i * j
+
+
+for i in range(2, 21):
+    for j in range(1, 11):
+        res = mult(i, j)
+        print(i, "*", j, "=", res)
+    print("\n")

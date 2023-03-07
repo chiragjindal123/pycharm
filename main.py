@@ -33,6 +33,7 @@
 
 x="hello world"
 print(x)
+print(len(x))
 
 xy=""
 for i in range(0,len(x)):
