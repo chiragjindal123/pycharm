@@ -1,25 +1,17 @@
 #1.	Python program to check whether the string is Symmetrical or Palindrome
 def is_palindrome(string):
-    for i in range(len(string) // 2):
-        if string[i] != string[-i-1]:
-            return False
+    if string != string[::-1]:
+        return False
     return True
 
 
 def is_symmetrical(string):
-    n = len(string)
-
-    left = 0
-    right = n - 1
-    while left < right:
-        if string[left] != string[right]:
-            return False
-        left += 1
-        right -= 1
+    n = int(len(string)/2)
+    if string[n:] != string[:n]:
+        return False
     return True
 
-
-string = "ababa"
+string = input()
 if is_palindrome(string):
     print("The string is a palindrome.")
 else:
