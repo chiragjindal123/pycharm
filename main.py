@@ -31,12 +31,26 @@
 # a='a+b' + "a"
 # print(a[2])
 
-x="hello world"
-print(x)
-print(len(x))
+# x="hello world"
+# print(x)
+# print(len(x))
+#
+# xy=""
+# for i in range(0,len(x)):
+#     print(x[i])
+#
+# a=2
+# area=round(a*a+1.7)
+# print(area)
 
-xy=""
-for i in range(0,len(x)):
-    print(x[i])
+m=int(input())
+for n in range(1,m):
+    if n>1:
+        for i in range(2,n):
+            if(n%i)==0:
+                break
+        else:
+              print(n)
+
 
 

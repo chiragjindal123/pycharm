@@ -28,12 +28,13 @@
 
 #Python program to check if given number is armstrong or not
 #
-n=153
+n=int(input())
 temp=n
+b=len(str(n))
 sum=0
 while n>0:
     r=n%10
-    sum+=r*r*r
+    sum+=r**b
     n//=10
 
 

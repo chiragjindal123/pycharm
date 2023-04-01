@@ -49,5 +49,6 @@ else:
 # words2 = string2.split()
 # uncommon_words = set(words1).symmetric_difference(set(words2))
 # print("Uncommon words: ", end="")
-# for word in uncommon_words: print(word, end=" ")
+# for word in uncommon_words:
+# print(word, end=" ")
 #
