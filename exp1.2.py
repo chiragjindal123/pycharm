@@ -28,24 +28,24 @@
 
 #Python program to check if given number is armstrong or not
 #
-n=int(input())
-temp=n
-b=len(str(n))
-sum=0
-while n>0:
-    r=n%10
-    sum+=r**b
-    n//=10
-
-
-if sum==temp:
-    print("It is an armstrong number")
-else:
-    print("It is not an armstrong number")
+# n=int(input())
+# temp=n
+# b=len(str(n))
+# sum=0
+# while n>0:
+#     r=n%10
+#     sum+=r**b
+#     n//=10
+#
+#
+# if sum==temp:
+#     print("It is an armstrong number")
+# else:
+#     print("It is not an armstrong number")
 
 
 #Python program to find the greatest of 3 numbers
-#
+# #
 # a=int(input())
 # b=int(input())
 # c=int(input())
@@ -53,7 +53,7 @@ else:
 # if (a>=b) and (a>=c):
 #     print("the greatest number is :" ,a)
 #
-# elif (b>=c) and (b>=c):
+# elif (b>=c):
 #     print("the greatest number is :" ,b)
 #
 # else:

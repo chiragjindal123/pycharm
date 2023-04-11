@@ -86,7 +86,6 @@ print(cnt)
 # def conv(str):
 #     s=""
 #     for i in str:
-#         ch=ord(i)
 #         if i in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
 #             s=s+chr(ord(i)+32)
 #         elif i in 'abcdefghijklmnopqrstuvwxyz':
