@@ -54,3 +54,21 @@ for n in range(1,m):
 
 
 
+# str = input("Enter the String:")
+# i = 0
+# ch2 = ''
+# # convert capital letter string to small letter string and vice versa
+# while str[i:]:
+#     ch = ord(str[i])
+#     if ch > 64 and ch < 91:
+#         ch2 += chr(ch+32)
+#     elif ch > 97 and ch < 122:
+#         ch2 += chr(ch-32)
+#     i += 1
+
+# print("Lower case String is:", ch2)
+
+l=['a',1,'b',2]
+print(l)
+
+
