@@ -1,6 +1,6 @@
 a = 'amaama'
 
-mid = int(len(a) // 2)
+mid = (len(a) // 2)
 
 c = a[:mid]
 b = a[mid:]
