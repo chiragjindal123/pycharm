@@ -42,15 +42,15 @@
 # a=2
 # area=round(a*a+1.7)
 # print(area)
-
-m=int(input())
-for n in range(1,m):
-    if n>1:
-        for i in range(2,n):
-            if(n%i)==0:
-                break
-        else:
-              print(n)
+#
+# m=int(input())
+# for n in range(1,m):
+#     if n>1:
+#         for i in range(2,n):
+#             if(n%i)==0:
+#                 break
+#         else:
+#               print(n)
 
 
 
